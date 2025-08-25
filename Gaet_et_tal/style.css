@@ -1,0 +1,16 @@
+body {
+  background: linear-gradient(135deg, #d8b4ff, #ffb6c1);
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+#knap {
+  background-color: green;
+  color: white;
+}
