@@ -1,16 +1,67 @@
 body {
-  background: linear-gradient(135deg, #d8b4ff, #ffb6c1);
+  background: lightblue;
+}
+
+h1,
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
 }
 
 h1 {
   text-align: center;
+  font-size: 1.5rem;
 }
 
-div {
+.container {
   text-align: center;
+  background-color: white;
+  padding: 50px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
 }
 
 #knap {
   background-color: green;
   color: white;
+  border-radius: 5px;
+}
+
+#confetti span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  top: -10px;
+  animation: fall 3s linear infinite;
+}
+
+input {
+  text-align: center;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  input,
+  #knap {
+    font-size: 1.1rem;
+  }
 }
