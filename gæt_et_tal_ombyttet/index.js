@@ -13,12 +13,21 @@ let computerGuess;
 let min = 0;
 let max = 100;
 
+//Tilføjer dissolve class til alle knapper undtagen start
+forLavtKnap.classList.add("dissolve");
+forHøjttKnap.classList.add("dissolve");
+rigtigKnap.classList.add("dissolve");
+
 //3: Tilføjer klik-event til start-knappen, som kører animationStart
 startKnap.addEventListener("click", animationStart);
 
 //4: Starter animationen og får start-knappen til at dissolve
 function animationStart() {
   startKnap.classList.add("dissolve");
+  //Fjerner dissolve class fra de tre andre knapper
+  forLavtKnap.classList.remove("dissolve");
+  forHøjttKnap.classList.remove("dissolve");
+  rigtigKnap.classList.remove("dissolve");
   //Får computerenen til at gætte på et tal mellem 0 og 100
   min = 0;
   max = 100;
@@ -66,6 +75,12 @@ function rigtigGuess() {
 //9: Jeg laver en reset funktion, som nulstiller spillet
 function reset() {
   startKnap.classList.remove("dissolve");
+
+  //Tilføjer dissolve class til de tre andre knapper
+  forLavtKnap.classList.add("dissolve");
+  forHøjttKnap.classList.add("dissolve");
+  rigtigKnap.classList.add("dissolve");
+
   //Nulstiller min og max
   min = 0;
   max = 100;
