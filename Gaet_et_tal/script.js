@@ -1,7 +1,10 @@
 "use strict";
 
-//Laver et tilfældigt tal fra 0-100 og gemmer det i en variabel
-const tal = Math.floor(Math.random() * 101);
+import randomNumber from "../utils/utils";
+
+//Laver et tilfældigt tal fra 0-100 og gemmer det i en variabel.
+//Jeg har fundet variablen tal gennem utils.js filen, som jeg har importeret her.
+const tal = randomNumber(100);
 
 console.log("Tilfældigt tal " + tal);
 

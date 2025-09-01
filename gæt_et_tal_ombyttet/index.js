@@ -14,6 +14,8 @@ let min = 0;
 let max = 100;
 
 //Tilføjer dissolve class til alle knapper undtagen start
+//Man ville nok bruge attributen diabled i stedet for dissolve i et rigtigt spil.
+// attributen disabled ville gøre knapperne mere accesible for brugere med skærmlæsere. Det ville man ikke kunne læse med mine classes.
 forLavtKnap.classList.add("dissolve");
 forHøjttKnap.classList.add("dissolve");
 rigtigKnap.classList.add("dissolve");
