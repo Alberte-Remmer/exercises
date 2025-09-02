@@ -67,7 +67,7 @@ function showTheseVehicles(arr) {
     // Hvis der er stop, vis dem som tekst. Ellers tomt felt.
     if (Array.isArray(each.stops) && each.stops.length > 0) {
       // Tjekker om 'stops' er et array (liste) Og at listen har mindst ét element
-      //Array.isArray() sikrer, at jeg kun arbejder med lister og undgår fejæ, hvis feltet mangler ellet andet.
+      //Array.isArray() sikrer, at jeg kun arbejder med lister og undgår fejl, hvis feltet mangler ellet andet.
       stops = each.stops.join(", "); // Hvis ja, laves listen om til en tekst med komma mellem hvert stop
     } // Hvis ikke, forbliver 'stops' en tom streng og tabellen viser et tomt felt
     else {
