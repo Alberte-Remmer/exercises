@@ -1,0 +1,36 @@
+.green {
+  background-color: lightgreen;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background: linear-gradient(to bottom, #fff 0%, #90cdf4 100%);
+  min-height: 100vh;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+  transition: background 0.2s;
+}
+
+dialog {
+  border-radius: 8px;
+  padding: 1rem;
+}
