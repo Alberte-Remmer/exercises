@@ -1,5 +1,13 @@
 "use strict";
 
+//Dette her eksempel er lavet som en funktion så den kan bruges i opgaver, den kan dog løses lettere ved eksempel 2:
+
+// EKSEMPEL 2:
+
+// const theName = peter;
+
+// console.log(theName.substring(0, 2).toLowerCase() + theName.substring(2, 3).toUpperCase() + theName.substring(3).toLowerCase());
+
 const name = "peter";
 
 function capitalizeThirdLetter(name) {
@@ -9,6 +17,7 @@ function capitalizeThirdLetter(name) {
   const third = name.substring(2, 3).toUpperCase();
   // Til sidst tager vi resten af navnet (fra fjerde bogstav og frem) og gør det til små bogstaver
   const rest = name.substring(3).toLowerCase();
+
   // Vi sætter delene sammen og returnerer det nye navn
   return firstTwo + third + rest;
 }

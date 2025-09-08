@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  font-size: 2rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* afstand mellem elementerne */
+}
+
+/*Opgaven*/
+
+[data-theme="hawaii"] {
+  /* CSS for Hawaii theme */
+  --header-bg-col: #eb9bda;
+  --footer-bg-col: rgb(243, 243, 125);
+  --main-bg-col: #89db89;
+}
+
+[data-theme="dark"] {
+  /* CSS for Dark theme */
+  --header-bg-col: #695fec;
+  --footer-bg-col: #695fec;
+  --main-bg-col: #695fec;
+  --text-col: #f6e9e9;
+}
+
+[data-theme="light"] {
+  /* CSS for Light theme */
+  --header-bg-col: #f6e9e9;
+  --footer-bg-col: #f6e9e9;
+  --main-bg-col: #f6e9e9;
+  --text-col: #3c2ff6;
+}
+
+header {
+  background-color: var(--header-bg-col);
+}
+footer {
+  background-color: var(--footer-bg-col);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+main {
+  background-color: var(--main-bg-col);
+  /*Sætter min-height på main, så den fylder resten af siden minus header og footer.*/
+  min-height: calc(100vh - 60px - 60px);
+  padding: 20px;
+}
+
+body {
+  color: var(--text-col);
+
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
