@@ -1,0 +1,8 @@
+:root {
+  --lightness: 50%;
+  --saturation: 80%;
+}
+
+body {
+  background-color: hsl(700, var(--saturation), var(--lightness));
+}

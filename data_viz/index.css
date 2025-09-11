@@ -1,0 +1,41 @@
+/* #bar {
+  width: 50px;
+  height: 50px; 
+  background: #4caf50;
+  transition: height 0.3s;
+} */
+
+#bar {
+  width: 80px;
+  min-height: 50px;
+  height: 0px;
+  background: linear-gradient(180deg, #4caf50 60%, #388e3c 100%);
+  transition: height 0.3s;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end; /* VIGTIG: så indholdet placeres i bunden */
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+#queue {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: flex-end; /* baren placeres nederst */
+  justify-content: center; /* baren placeres i midten */
+  background: #f5f5f5;
+}

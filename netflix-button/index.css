@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(69, 56, 56); /* Sætter baggrundsfarven på hele siden */
+}
+
+.icon {
+  margin-right: 8px; /* Giver lidt luft til højre for trekanten */
+}
+
+#next-episode {
+  position: relative; /* Gør det muligt at placere indre elementer absolut */
+  overflow: hidden; /* Skjuler alt, der går udenfor knappen */
+  background: #bbb7b7; /* Sætter baggrundsfarven på knappen */
+  color: #222; /* Sætter tekstfarven til mørk grå/sort */
+  border: none; /* Fjerner standard kant på knappen */
+  padding: 16px 32px; /* Giver luft omkring teksten i knappen */
+  font-size: 1.2em; /* Gør teksten lidt større */
+  border-radius: 5px; /* Gør hjørnerne på knappen runde */
+  cursor: pointer; /* Viser en hånd, når man holder musen over knappen */
+}
+
+#next-episode span {
+  position: relative; /* Gør det muligt at styre lag/placering */
+  z-index: 2; /* Sørger for at teksten ligger øverst (foran progress-bar) */
+}
+
+#progress {
+  position: absolute; /* Placerer progress-bar ovenpå knappen */
+  left: 0; /* Starter helt til venstre */
+  top: 0; /* Starter helt i toppen */
+  bottom: 0; /* Går helt ned til bunden */
+  width: 0%; /* Starter med ingen bredde (skal fyldes op med JS) */
+  background: rgba(255, 255, 255, 0.791); /* Lys, lidt gennemsigtig farve */
+  z-index: 1; /* Ligger under teksten, men over knap-baggrund */
+  transition: width 0.1s linear; /* Gør at bredden ændres glat og ikke "hopper" */
+}
