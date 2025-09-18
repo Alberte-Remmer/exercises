@@ -1,0 +1,39 @@
+1: Planlæg layout og design:
+- Find inspiration til hvordan appen skal se ud
+- LAv en hurtig skitse/wierframe, af brugerfladen.
+
+2: Opret grundlæggende HTML-struktur:
+- Lav sektioner til toDo-listen og færdiglisten
+- Tilføj input-felter og knapper til at oprette nye opgaver
+
+3: Tilføj CSS for styling:
+- Gør appen pæn og brugervenlig
+
+4: Implementer JavaScript til opgavehåndtering:
+- Opret funktion til at tilføje nye opgaver med unikt ID og beskrivelse
+- Tilføj ekstra information til hver opgavehåndtering
+
+5: Vis opgaver i ToDo- og færdiglisten:
+- Sørg for at opgaverne vises korrekt i de rigtige lister
+
+6: Funktionaliteten for at markere opgaver som færdige:
+- Flyt opgaven til færdiglisten, når den markeres som færdige
+
+7: Funktionalitet for at slette opgaver:
+- Flyt opgaven tilbage til ToDo-listen, hvos brugeren fortryder.
+
+8: Funktionalitet for at slette opgaver:
+- Giv mulighed for at fjerne opgaver helt fra listen.
+
+9: Gem og hent opgaver med localStorgae:
+- Gem opgaver, når de oprettes, slettes eller ændrer status
+- Hent opgaver fra lovalStorgare, når appen åbnes.
+
+10: Tilføj relevant feedback til brugeren:
+- Vis beskeder, animationer eller andet, når der sker ændringer
+
+11: Test og fejlret:
+- Tjek at alle funktioner virker og håndterer fejl pænt
+
+12: Finpuds design og brugeroplevelse:
+- Gør appen ekstra intuitiv og flot

@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIABLER */
+
+:root {
+  /* Farver */
+  --background-color: #ffe4ef;
+  --text-color: #4b042a;
+
+  /* Skrifttyper */
+  --font-headings: "Chewy", cursive;
+  --font-li: "Comic Relief", cursive;
+
+  /* Font sizes */
+  --h1-phone: 2rem;
+  --h1-tablet: 2.5rem;
+  --h1-desktop: 3rem;
+  --h2-phone: 1.3rem;
+  --h2-tablet: 1.6rem;
+  --h2-desktop: 1.8rem;
+  --li-phone: 1rem;
+  --li-tablet: 1.2rem;
+  --li-desktop: 1.3rem;
+
+  /* Margins */
+
+  /* Højre/venstrer margins*/
+  --body-margin-phone: 1rem;
+  --body-margin-tablet: 2rem;
+  --body-margin-desktop: 7rem;
+
+  /* h1 bottom */
+  --h1-margin-bottom-phone: 2rem;
+  --h1-margin-bottom-tablet: 3rem;
+  --h1-margin-bottom-desktop: 4rem;
+
+  /* h2 top/bottom */
+  --h2-margin-top-phone: 1.5rem;
+  --h2-margin-bottom-phone: 0.5rem;
+  --h2-margin-top-tablet: 2rem;
+  --h2-margin-bottom-tablet: 0.75rem;
+  --h2-margin-top-desktop: 2.5rem;
+  --h2-margin-bottom-desktop: 1rem;
+
+  /* List spacing */
+  --li-margin-phone: 0.7rem;
+  --li-margin-tablet: 0.9rem;
+  --li-margin-desktop: 1.2rem;
+}
+
+/* Generel styling */
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin-left: var(--body-margin-phone);
+  margin-right: var(--body-margin-phone);
+}
+main {
+  margin-top: 3rem;
+}
+footer {
+  font-family: var(--font-li);
+  font-size: 1rem;
+  color: var(--text-color);
+  text-align: right;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: var(--body-margin-phone);
+  /* For at få footeren til at være i bunden */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+li.completed {
+  text-decoration: line-through;
+}
+
+/* Skrifttyper */
+
+h1,
+h2 {
+  font-family: var(--font-headings);
+}
+h1 {
+  font-size: var(--h1-phone);
+  margin-bottom: var(--h1-margin-bottom-phone);
+}
+h2 {
+  font-size: var(--h2-phone);
+  margin-top: var(--h2-margin-top-phone);
+  margin-bottom: var(--h2-margin-bottom-phone);
+}
+
+li {
+  font-family: var(--font-li);
+  font-size: var(--li-phone);
+  margin-bottom: var(--li-margin-phone);
+  display: grid;
+  grid-template-columns: auto 2fr auto auto;
+  align-items: center;
+}
+
+/* Margener */
+
+ul {
+  list-style-type: none;
+}
+
+/* doneBtn */
+
+.done-btn {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--text-color);
+  background-color: white;
+  color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-size: 0.6rem;
+}
+
+.done-btn.checked {
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  color: #38a873;
+  border: 2px solid;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+  color: #38a873;
+}
+
+/* Input-felt */
+input[type="text"] {
+  background-color: #fff0f6;
+  border: 2px solid #ffb6d5;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: #4b042a;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: var(--font-li);
+  width: 81%;
+}
+
+input[type="text"]:focus {
+  border-color: var(--text-color); /* din grønne farve */
+  background-color: #ffe4ef;
+}
+
+/* add-btn */
+#add-btn {
+  background-color: #ffb6d5;
+  color: #4b042a;
+  border: 2px solid #ffb6d5;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 1rem;
+  font-family: var(--font-headings);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, border-color 0.2s;
+  box-shadow: 0 2px 8px rgba(168, 0, 91, 0.08);
+}
+
+#add-btn:hover,
+#add-btn:focus {
+  background-color: #ffe4ef;
+  border-color: #38a873; /* din grønne farve */
+  color: #38a873;
+}
+
+/* edit-btn */
+
+.edit-btn {
+  background: none;
+  border: none;
+  color: #888; /* faded grå tekst */
+  font-size: 1rem;
+  font-family: var(--font-li);
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.2s;
+  margin-left: auto; /* skubber knappen helt ud til højre */
+}
+
+.edit-btn:hover,
+.edit-btn:focus {
+  color: var(--text-color); /* din tekstfarve */
+}
+
+/* delete-btn */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover,
+.delete-btn:focus {
+  color: #ef0307;
+}
+
+/*** IPAD ***/
+@media (min-width: 768px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  body {
+    margin-left: var(--body-margin-tablet);
+    margin-right: var(--body-margin-tablet);
+  }
+  footer {
+    margin-right: var(--body-margin-tablet);
+  }
+  h1 {
+    font-size: var(--h1-tablet);
+    margin-bottom: var(--h1-margin-bottom-tablet);
+  }
+  h2 {
+    font-size: var(--h2-tablet);
+    margin-top: var(--h2-margin-top-tablet);
+    margin-bottom: var(--h2-margin-bottom-tablet);
+  }
+  li {
+    font-size: var(--li-tablet);
+    margin-bottom: var(--li-margin-tablet);
+  }
+
+  .done-btn {
+    width: 22px;
+    height: 22px;
+    font-size: 0.8rem;
+  }
+  .done-btn.checked {
+    width: 22px;
+    height: 22px;
+    font-size: 0.8rem;
+  }
+  input[type="text"] {
+    font-size: var(--li-tablet);
+    width: 75%;
+  }
+  #add-btn {
+    font-size: var(--li-tablet);
+  }
+  .edit-btn {
+    font-size: var(--li-tablet);
+  }
+
+  .delete-btn {
+    font-size: var(--li-tablet);
+  }
+}
+
+/*** DESKTOP ***/
+
+@media (min-width: 1024px) {
+  .grid_1-1 {
+    gap: 150px;
+  }
+  body {
+    margin-left: var(--body-margin-desktop);
+    margin-right: var(--body-margin-desktop);
+  }
+  footer {
+    margin-right: var(--body-margin-desktop);
+  }
+  h1 {
+    font-size: var(--h1-desktop);
+    margin-bottom: var(--h1-margin-bottom-desktop);
+  }
+  h2 {
+    font-size: var(--h2-desktop);
+    margin-top: var(--h2-margin-top-desktop);
+    margin-bottom: var(--h2-margin-bottom-desktop);
+  }
+  li {
+    font-size: var(--li-desktop);
+    margin-bottom: var(--li-margin-desktop);
+  }
+
+  .done-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 1rem;
+  }
+  .done-btn.checked {
+    width: 26px;
+    height: 26px;
+    font-size: 1.2rem;
+  }
+  input[type="text"] {
+    font-size: var(--li-desktop);
+    width: 85%;
+  }
+  #add-btn {
+    font-size: var(--li-desktop);
+  }
+  .edit-btn {
+    font-size: var(--li-desktop);
+  }
+  .delete-btn {
+    font-size: var(--li-desktop);
+  }
+}
